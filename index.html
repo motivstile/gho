@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <title>Random Son</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(120deg, #f6d365, #fda085);
+      font-family: Arial, sans-serif;
+    }
+
+    #random-son {
+      font-size: 60px;
+      color: white;
+      background-color: #333;
+      padding: 40px 60px;
+      border-radius: 20px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+
+  <div id="random-son"></div>
+
+  <script>
+    const random = Math.floor(Math.random() * 100) + 1;
+    document.getElementById("random-son").innerHTML = random;
+  </script>
+
+</body>
+</html>
